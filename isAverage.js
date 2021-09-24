@@ -1,11 +1,12 @@
 function isAverage(arr, float) {
   for (i = 0; i < arr.length; i++) {
-    let sum = arr[i] + arr[i + 1];
-    let avg = sum / 2;
-    if (avg != float) {
+     for (j=0; j < arr.length; j++) {
+  
+    if ((arr[i] + arr[j]) / 2 != float) {
       console.log("false");
-    } else if (avg == float) {
+    } else if ((arr[i] + arr[j]) / 2 == float) {
       console.log("true");
+      }
     }
   }
 }
